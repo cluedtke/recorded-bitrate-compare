@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "ts-node ./src/index.ts",
-    "dev": "nodemon --watch './src/**/*.ts' --exec 'ts-node' ./src/index.ts",
+    "dev": "nodemon --watch './src/**/*.ts' --exec 'npx ts-node' ./src/index.ts",
     "www": "concurrently \"npm run start\" \"npx localtunnel --port 8080\""
   },
   "keywords": [],
