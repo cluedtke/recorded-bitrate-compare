@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Recorded Bitrate Compare</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Recorded Bitrate Compare</h2>
+
+      <hr />
+
+      <h4 class="row">
+        <div class="col s12">
+          <time>00:00:00</time>
+          <i id="ico-recording" style="display: none;" class="material-icons">record_voice_over</i>
+        </div>
+      </h4>
+
+      <p>
+        <a id="btn-start-mediarecorder" class="waves-effect btn">
+          Start MediaRecorder
+        </a>
+        <a id="btn-stop-mediarecorder" class="waves-effect btn disabled">
+          Stop MediaRecorder
+        </a>
+      </p>
+      <p>
+        <a id="btn-start-recordrtc" class="waves-effect btn">
+          Start RecordRTC
+        </a>
+        <a id="btn-stop-recordrtc" class="waves-effect btn disabled">
+          Stop RecordRTC
+        </a>
+      </p>
+
+      <p>
+        <audio></audio>
+      </p>
+    </div>
+
+    <script src="./scripts/RecordRTC.min.js"></script>
+    <script src="./scripts/xhr2.js"></script>
+    <script src="./scripts/stopwatch.js"></script>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
